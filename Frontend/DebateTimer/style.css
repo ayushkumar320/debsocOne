@@ -1,50 +1,49 @@
 body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 .description {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            max-width: 90%;
-            width: 400px;
-        }
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  max-width: 90%;
+  width: 400px;
+}
 
-        .debate-label {
-            display: block;
-            margin-bottom: 20px;
-            color: #555;
-        }
+.debate-label {
+  display: block;
+  margin-bottom: 20px;
+  color: #555;
+}
 
-        #debate-type {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: normal;
-            color: #444;
-            background-color: #fff;
-            cursor: pointer;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%20197.6l-131.3%20131.3c-4.1%204.1-9.5%206.2-15%206.2s-10.9-2.1-15-6.2L5.4%20197.6c-8.1-8.1-8.1-21.3%200-29.4s21.3-8.1%2029.4%200l111.4%20111.4%20111.4-111.4c8.1-8.1%2021.3-8.1%2029.4%200s8.1%2021.3%200%2029.4z%22%2F%3E%3C%2Fsvg%3E');
-            background-repeat: no-repeat;
-            background-position: right 15px top 50%;
-            background-size: 12px auto;
-        }
+#debate-type {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #444;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%20197.6l-131.3%20131.3c-4.1%204.1-9.5%206.2-15%206.2s-10.9-2.1-15-6.2L5.4%20197.6c-8.1-8.1-8.1-21.3%200-29.4s21.3-8.1%2029.4%200l111.4%20111.4%20111.4-111.4c8.1-8.1%2021.3-8.1%2029.4%200s8.1%2021.3%200%2029.4z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 12px auto;
+}
