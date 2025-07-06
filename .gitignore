@@ -1,0 +1,5 @@
+**.json
+**.vscode/
+**.env
+**node_modules/
+**vite.config.js
