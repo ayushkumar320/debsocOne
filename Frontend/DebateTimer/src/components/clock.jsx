@@ -1,11 +1,13 @@
-import React from "react";
+ import React from "react";
 
 function Clock() {
   return (
-    <div class="clock">
-      <span class="time">00:00</span>
+    <div className="clock">
+        <span className="time">00:00</span>
+           
+   
     </div>
   );
-}
+ }
 
-export default Clock;
+ export default Clock;

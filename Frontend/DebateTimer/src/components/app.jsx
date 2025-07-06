@@ -1,14 +1,16 @@
 import React from "react";
 import Description from "./description";
-import Clock from "./clock";
+import Card from "./card";
+
 
 function App() {
   return (
     <div>
       <Description />
-      <Clock />
+        <Card />
     </div>
   );
 }
 
+ 
 export default App;
