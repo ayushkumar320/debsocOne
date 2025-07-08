@@ -1,12 +1,16 @@
 import React from "react";
-import Motion from "./motion";
 import DebateType from "./debateType";
 
 function Description() {
   return (
     <div className="description">
-      <DebateType />
-     <Motion />
+      <label id="debate-label">Type of parliamentary debate:</label>
+      <br />
+      <select id="debate-type" defaultValue="">
+        <option value="" disabled hidden>Select your parliament</option>
+        <option value="Asian">Asian</option>
+        <option value="British">British</option>
+      </select>
     </div>
   );
 }

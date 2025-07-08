@@ -1,49 +1,82 @@
 body {
-  font-family: "Inter", sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #FFA500;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #f4f4f4;
-  padding: 20px;
-  box-sizing: border-box;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .description {
-  background-color: #111111;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  max-width: 90%;
-  width: 400px;
+  margin-bottom: 30px;
 }
 
-.debate-label {
-  display: block;
-  margin-bottom: 20px;
-  color: #555;
+.description label {
+  color: white;
+  font-size: 1.1em;
 }
 
 #debate-type {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: normal;
-  color: #444;
-  background-color: #fff;
+  padding: 6px 12px;
+  margin-top: 10px;
+  background-color: #1e1e1e;
+  color: #FFA500;
+  border: 1px solid #FFA500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+#debate-type:hover {
+  background-color: #2c2c2c;
+}
+
+#debate-type:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffa50099;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 30px 50px;
+  box-shadow: 0 0 10px #ffa50033;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.clock {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #00ff00;
+  transition: color 0.5s ease;
+}
+
+button {
+  background-color: #FFA500;
+  color: #000;
+  border: none;
+  padding: 10px 18px;
+  margin: 0 5px;
+  border-radius: 8px;
   cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%20197.6l-131.3%20131.3c-4.1%204.1-9.5%206.2-15%206.2s-10.9-2.1-15-6.2L5.4%20197.6c-8.1-8.1-8.1-21.3%200-29.4s21.3-8.1%2029.4%200l111.4%20111.4%20111.4-111.4c8.1-8.1%2021.3-8.1%2029.4%200s8.1%2021.3%200%2029.4z%22%2F%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-  background-position: right 15px top 50%;
-  background-size: 12px auto;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff8c00;
+  transform: scale(1.05);
+}
+
+#parliament-output {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #FFA500;
 }
