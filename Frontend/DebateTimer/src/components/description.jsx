@@ -1,4 +1,5 @@
 import React from "react";
+import DebateType from "./debateType";
 
 function Description() {
   return (
