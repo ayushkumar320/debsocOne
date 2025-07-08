@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const clockElement = document.querySelector(".clock");
   const startBtn = document.querySelector(".start");
   const stopBtn = document.querySelector(".stop");
+  const resetBtn = document.querySelector(".reset");
 
   let timer;
   let seconds = 0;
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function startTimer() {
-    if (timer) return; // prevent multiple intervals
+    if (timer) return;
     timer = setInterval(() => {
       seconds++;
       updateClock();
@@ -25,10 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
     timer = null;
   }
 
-  
+  function resetTimer() {
+    clearInterval(timer);
+    timer = null;
+    seconds = 0;
+    updateClock();
+  }
+
   startBtn.addEventListener("click", startTimer);
   stopBtn.addEventListener("click", stopTimer);
+  resetBtn.addEventListener("click", resetTimer);
 
-  // Optional: initialize display
   updateClock();
 });
