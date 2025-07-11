@@ -1,16 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
+
 function Navbar() {
-    return (
-        <nav>
-            <h1>SMVIT DEBSOC</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    );
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(prev => !prev);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
+  return (
+    <nav className="bg-gray-900 text-white px-6 py-6 flex items-center justify-between shadow-md transition-colors duration-300 relative">
+      <h1 className="text-2xl font-bold cursor-pointer text-orange-400 hover:text-orange-600 transition-colors duration-300">
+        SMVIT DEBSOC
+      </h1>
+      <ul className="flex space-x-6 items-center">
+        <li><a href="#home" className="hover:text-orange-400 transition-colors duration-300">Home</a></li>
+        <li><a href="#about" className="hover:text-orange-400 transition-colors duration-300">Achievements</a></li>
+        <li><a href="#events" className="hover:text-orange-400 transition-colors duration-300">Highlights</a></li>
+        <li><a href="#contact" className="hover:text-orange-400 transition-colors duration-300">Review</a></li>
+        <li><a href="#home" className="hover:text-orange-400 transition-colors duration-300">Debate Timer</a></li>
+        <li><a href="#home" className="hover:text-orange-400 transition-colors duration-300">Session</a></li>
+
+        {/* Contact Us Dropdown */}
+        <li
+          className="relative"
+          onMouseEnter={() => setIsDropdownOpen(true)}
+          onMouseLeave={closeDropdown}
+        >
+          <button
+            onClick={toggleDropdown}
+            className="hover:text-orange-400 transition-colors duration-300 focus:outline-none"
+          >
+            Get In Touch
+          </button>
+
+          <div
+            className={`absolute top-10 right-0 mt-2 w-40 bg-gray-800 border border-gray-700 rounded shadow-lg z-10 transform transition-all duration-500 origin-top
+              ${isDropdownOpen ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}`}
+          >
+            <a
+              href="#email"
+              className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500 transition-colors duration-200"
+            >
+              Admin
+            </a>
+            <a
+              href="#phone"
+              className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-200 hover:text-orange-500"
+            >
+              Member
+            </a>
+            <a
+              href="#location"
+              className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-200 hover:text-orange-500"
+            >
+              Apply Now
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Navbar;
