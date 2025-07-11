@@ -11,6 +11,13 @@ function Description() {
         <option value="Asian">Asian</option>
         <option value="British">British</option>
       </select>
+      <br />
+      <label id="clock-label">Type of clock:</label>
+      <br />
+            <select id="clock-type">
+                <option value="Timer">Timer</option>
+                <option value="stopwatch">stopwatch</option>
+            </select>
     </div>
   );
 }

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const debateType = document.getElementById("debate-type");
 
   let timer;
-  let seconds = 0;
+  let seconds = 7*60+15;
 
   function updateClock() {
     const minutes = Math.floor(seconds / 60);
@@ -20,27 +20,45 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       clockElement.style.color = "#FFD700"; // Yellow
     }
+    const protectedTime = document.querySelector(".protected-time");
+    setInterval(()=>{
+      if (
+    (seconds <= 435 && seconds > 375) || 
+    (seconds <= 75 && seconds >= 0)      
+  ) {
+    protectedTime.textContent = "Protected time: can't ask POI";
+  } else {
+    protectedTime.textContent = "";
   }
-
-  function startTimer() {
-    if (timer) return;
-    timer = setInterval(() => {
-      seconds++;
+    })
+  
+  }
+  
+function startTimer() {
+  if (timer) return;
+  timer = setInterval(() => {
+    if (seconds > 0) {     
+      seconds--;            
       updateClock();
-    }, 1000);
-  }
+    } else {
+      clearInterval(timer); 
+      timer = null;
+    }
+  }, 1000);
+   
+};
 
-  function stopTimer() {
-    clearInterval(timer);
-    timer = null;
-  }
 
-  function resetTimer() {
-    clearInterval(timer);
-    timer = null;
-    seconds = 0;
-    updateClock();
-  }
+function resetTimer() {
+  clearInterval(timer);
+  timer = null;
+  seconds = 7 * 60 + 15;   
+  updateClock();
+}
+function stopTimer() {         
+  clearInterval(timer);
+  timer = null;
+}
 
   startBtn.addEventListener("click", startTimer);
   stopBtn.addEventListener("click", stopTimer);
@@ -55,6 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
       output.id = "parliament-output";
       debateType.parentElement.appendChild(output);
     }
-    output.textContent = `Your Parliament is: ${debateType.value}`;
+    output.textContent = `${debateType.value} parliamentary debate`;
   });
 });

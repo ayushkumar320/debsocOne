@@ -6,6 +6,7 @@ function Card() {
   return (
     <div className="card">
       <Clock />
+      <p class="protected-time"></p>
       <Button />
     </div>
   );
