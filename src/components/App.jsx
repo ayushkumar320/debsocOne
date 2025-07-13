@@ -4,14 +4,14 @@ import Navbar from "./navbar";
 import Review from "./Review";
 import Home from "./home";
 function App() {
-    return (
-        <div>
-           <Navbar />
-            <Home />
-           <Review />
-           <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Home />
+      <Review />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

@@ -40,29 +40,35 @@ function Review() {
   const extended = [...reviews, ...reviews];
 
   return (
-    <section className="relative isolate overflow-hidden h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 flex flex-col justify-center space-y-16">
-      {/* Left to Right Scroll */}
-      <div className="relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-gray-50"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-gray-50"></div>
-        <div className="flex w-max animate-marquee">
-          {extended.map((r, idx) => (
-            <ReviewCard key={`top-${idx}`} review={r} />
-          ))}
-        </div>
-      </div>
+    <div className="bg-black">
+      <section className="relative isolate overflow-hidden h-screen bg-blue-950 flex flex-col justify-center space-y-16">
+        <h1 className="text-4xl text-orange-600 flex text-center w-full justify-center font-extrabold">
+          REVIEWS
+        </h1>
 
-      {/* Right to Left Scroll */}
-      <div className="relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-gray-50"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-gray-50"></div>
-        <div className="flex w-max animate-marquee-reverse">
-          {extended.map((r, idx) => (
-            <ReviewCard key={`bottom-${idx}`} review={r} />
-          ))}
+        {/* Left to Right Scroll */}
+        <div className="relative">
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-blue-950"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-blue-950"></div>
+          <div className="flex w-max animate-marquee">
+            {extended.map((r, idx) => (
+              <ReviewCard key={`top-${idx}`} review={r} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+
+        {/* Right to Left Scroll */}
+        <div className="relative">
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-blue-950"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-blue-950"></div>
+          <div className="flex w-max animate-marquee-reverse">
+            {extended.map((r, idx) => (
+              <ReviewCard key={`bottom-${idx}`} review={r} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
