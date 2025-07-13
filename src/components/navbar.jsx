@@ -18,11 +18,12 @@ function Navbar() {
       </h1>
       <ul className="flex space-x-6 items-center">
         <li><a href="#home" className="hover:text-orange-400 transition-colors duration-300">Home</a></li>
-        <li><a href="#about" className="hover:text-orange-400 transition-colors duration-300">Achievements</a></li>
+        <li><a href="#Achievements" className="hover:text-orange-400 transition-colors duration-300">Achievements</a></li>
         <li><a href="#events" className="hover:text-orange-400 transition-colors duration-300">Highlights</a></li>
-        <li><a href="#contact" className="hover:text-orange-400 transition-colors duration-300">Review</a></li>
-        <li><a href="#home" className="hover:text-orange-400 transition-colors duration-300">Debate Timer</a></li>
-        <li><a href="#home" className="hover:text-orange-400 transition-colors duration-300">Session</a></li>
+        <li><a href="#Review" className="hover:text-orange-400 transition-colors duration-300">Review</a></li>
+        <li><a href="#Gallery" className="hover:text-orange-400 transition-colors duration-300">Gallery</a></li>
+        <li><a href="#Debate Timer" className="hover:text-orange-400 transition-colors duration-300">Debate Timer</a></li>
+        <li><a href="session" className="hover:text-orange-400 transition-colors duration-300">Session</a></li>
 
         {/* Contact Us Dropdown */}
         <li
@@ -42,19 +43,25 @@ function Navbar() {
               ${isDropdownOpen ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}`}
           >
             <a
-              href="#email"
+              href="#login page link"
               className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500 transition-colors duration-200"
             >
               Admin
             </a>
             <a
-              href="#phone"
+              href="#member page link"
               className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-200 hover:text-orange-500"
             >
               Member
             </a>
+             <a
+              href="#google form link"
+              className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-200 hover:text-orange-500"
+            >
+              Equity
+            </a>
             <a
-              href="#location"
+              href="#google form link"
               className="block px-4 py-2 hover:bg-gray-700 transition-colors duration-200 hover:text-orange-500"
             >
               Apply Now
