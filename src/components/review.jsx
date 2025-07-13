@@ -41,7 +41,7 @@ function Review() {
 
   return (
     <div className="bg-black">
-      <section className="relative isolate overflow-hidden h-screen bg-blue-950 flex flex-col justify-center space-y-16">
+      <section className="relative isolate overflow-hidden h-screen bg-gradient-to-br from-black via-gray-900 to-black flex flex-col justify-center space-y-16">
         <h1 className="text-4xl text-orange-600 flex text-center w-full justify-center font-extrabold">
           REVIEWS
         </h1>
