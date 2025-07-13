@@ -6,7 +6,7 @@ function Home() {
         <h1 className="text-4xl font-bold  mt-10">Welcome to SMVIT DEBSOC</h1>
 
         <div>
-          <img src="./media/M5.jpg" alt="group photo" className="shadow-md p-0 mt-0  h-[700px] relative left-0 w-full bg-cover filter grayscale" />
+          <img src="./media/M5.jpg" alt="group photo" className="shadow-md p-0 mt-0  h-[700px] relative left-0 w-full " />
         </div>
     </div>
   );
