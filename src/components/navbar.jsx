@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-900 text-white px-6 py-6 flex items-center justify-between shadow-md transition-colors duration-300 relative">
+    <nav className="bg-gray-900 text-white px-6 py-6 flex items-center justify-between shadow-md transition-colors duration-300 fixed top-0 left-0 w-full z-50 ">
       <h1 className="text-2xl font-bold cursor-pointer text-orange-400 hover:text-orange-600 transition-colors duration-300">
         SMVIT DEBSOC
       </h1>
