@@ -24,7 +24,7 @@ function Navbar() {
         </li>
         <li>
           <a href="#Achievements" className="hover:text-orange-400 transition-colors duration-300">
-            Achievements
+            Team
           </a>
         </li>
         <li>
@@ -37,11 +37,7 @@ function Navbar() {
             Review
           </a>
         </li>
-        <li>
-          <a href="#Gallery" className="hover:text-orange-400 transition-colors duration-300">
-            Gallery
-          </a>
-        </li>
+
         <li>
           <a href="#Debate Timer" className="hover:text-orange-400 transition-colors duration-300">
             Debate Timer
