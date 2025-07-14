@@ -9,7 +9,7 @@ const GradientMask = () => (
 );
 
 const ReviewCard = ({ review }) => (
-  <article className="relative z-10 shrink-0 w-80 sm:w-96 mx-4 bg-white backdrop-blur-md rounded-2xl shadow-lg p-6">
+  <article className="relative z-10 shrink-0 w-80 sm:w-96 mx-4 bg-white backdrop-blur-md rounded-2xl shadow-lg p-6 cursor-pointer">
     <header className="flex items-center space-x-4 mb-4">
       <img
         src={review.avatar}
@@ -43,7 +43,7 @@ function Review() {
   const extended = [...reviews, ...reviews];
 
   return (
-    <div className="bg-black overflow-x-hidden">
+    <div className="bg-black overflow-x-hidden ">
       <section className="relative isolate min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex flex-col justify-center space-y-16 py-16">
         <h1 className="text-3xl mb-4 text-orange-600 text-center font-extrabold">REVIEWS</h1>
         <div className="relative">
