@@ -5,14 +5,14 @@ import Review from "./Review";
 import Home from "./home";
 import TeamGrid from "./Team";
 function App() {
-    return (
-        <div>
-           <Navbar />
-            <Home />
-            <TeamGrid />
-           <Review />
-           <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Home />
+      <TeamGrid />
+      <Review />
+      <Footer />
+    </div>
+  );
 }
 export default App;
