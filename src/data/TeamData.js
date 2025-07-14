@@ -1,27 +1,30 @@
+import Mobi from "./media/Mobi.jpg";
+
+
 export const teamMembers = [
   {
     name: "Kanishk",
     position: "President",
-    avatar: "/media/aman.jpg",
+    avatar: Mobi,
   },
   {
-    name: "Aditya kumar",
+    name: "Aditya Kumar",
     position: "Vice President",
-    avatar: "/media/mudit.jpg",
+    avatar: Mobi,
   },
   {
     name: "Dhruve Kumar",
     position: "Equity Head",
-    avatar: "/media/pranjal.jpg",
+    avatar: Mobi,
   },
   {
     name: "Vitalla",
     position: "Equity Head",
-    avatar: "/media/hardik.jpg",
+    avatar: Mobi,
   },
   {
     name: "Md Mobasshir Shakil Khan",
     position: "Member",
-    avatar: "/assets/Mobi.jpg",
+    avatar: Mobi,
   },
 ];
