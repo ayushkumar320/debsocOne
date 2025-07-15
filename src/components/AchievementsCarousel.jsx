@@ -17,7 +17,7 @@ const AchievementCarousel = () => {
   };
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center bg-black overflow-hidden px-4">
+    <div className="relative w-full h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden px-4">
       {/* <h1 className="text-4xl font-extrabold text-orange-500 mb-6">ACHIEVEMENTS</h1> */}
       <div className="relative w-full max-w-7xl h-[420px] flex items-center justify-center">
         
