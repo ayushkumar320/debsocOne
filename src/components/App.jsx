@@ -11,10 +11,9 @@ function App() {
         <div>
            <Navbar />
             <Home />
-            <AchievementsCarousel />
             <TeamGrid />
             <Quote/>
-
+            <AchievementsCarousel />
            <Review />
            <Footer />
         </div>

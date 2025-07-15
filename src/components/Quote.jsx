@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import quoteImage from "../media/quote-image.jpg"; 
+import quoteImage from "../data/media/quote-image.jpg"; 
 
 function Quote() {
   const [quote, setQuote] = useState("");
