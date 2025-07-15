@@ -11,12 +11,12 @@ function TeamGrid() {
         {teamMembers.map((member, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center bg-white/10 backdrop-blur-md border border-orange-600 rounded-2xl p-6 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_#f97316] cursor-pointer"
+            className="flex flex-col items-center bg-white/10 backdrop-blur-md border border-orange-600 rounded-2xl p-6 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_#f97316] cursor-pointer overflow-hidden "
           >
             <img
               src={member.avatar}
               alt={member.name}
-              className="w-32 h-32 rounded-full object-cover border-4 border-orange-600 mb-6"
+              className="w-32 h-32 rounded-full object-cover border-4 border-orange-600 mb-6 aspect-square"
             />
             <h3 className="text-white text-xl font-bold mb-2">{member.name}</h3>
             <div className="text-orange-500 text-lg border-t border-orange-600 pt-2 w-full text-center">
