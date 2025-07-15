@@ -5,13 +5,16 @@ import Review from "./Review";
 import Home from "./home";
 import TeamGrid from "./Team";
 import Quote from "./Quote";
+import AchievementsCarousel from "./AchievementsCarousel";
 function App() {
     return (
         <div>
            <Navbar />
             <Home />
+            <AchievementsCarousel />
             <TeamGrid />
             <Quote/>
+
            <Review />
            <Footer />
         </div>
