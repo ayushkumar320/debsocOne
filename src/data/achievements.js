@@ -1,28 +1,39 @@
+import AcvAditya from "./media/AcvAditya.jpg";
+import AcvAnanya from "./media/AcvAnanya.jpg";
+import AcvPrachi from "./media/AcvPrachi.jpg";  
+import AcvRohan from "./media/AcvRohan.jpg";
+import AcvAnuj from "./media/AcvAnuj.jpg";
+import AcvOwais from "./media/AcvOwais.jpg";
+import AcvPrachiNmit from "./media/AcvPrachiNmit.jpg";
+import AcvSrejoniRohan from "./media/AcvSrejoniRohan.jpg";
+import AcvPuru from "./media/AcvPuru.jpg";
+
+
 const achievements = [
   {
-    img: "/images/award1.jpg",
-    title: "Winner – Inter-college Hackathon",
-    desc: "Our team secured first place among 150+ participants in an inter-college hackathon. We built an AI-driven productivity tool under 24 hours with real-time collaboration and task management features.",
+    img: AcvSrejoniRohan,
+    title: "Rohan and Srejoni broke into the Open Category and advanced to the Semifinals at the BITS Goa Contention PD'24",
+    desc: "We have all been eagerly awaiting this moment for the past couple of years, and we are absolutely thrilled and proud to announce that Rohan and Srejoni broke into the Open Category and advanced to the Semifinals at the BITS Goa Contention PD'24, held from 8th to 10th of November at BITS Goa Campus. This remarkable achievement is a testament to their relentless hard work and dedication.Our contingent from SMVIT Debsoc consisted of 13 participants who gave their very best throughout the tournament.Congratulations once again to everyone involved!",
   },
   {
-    img: "/images/award2.jpg",
-    title: "Best UI – UI/UX Fest",
-    desc: "Awarded for the cleanest and most user-friendly design at a regional UI/UX competition. Focused on accessibility, dark mode, and minimal interface patterns.",
+    img: AcvPuru,
+    title: "Our President kicked off Diwali celebrations with a bang by securing an “Adj break“at the prestigious IIT Kanpur PD!",
+    desc: "Our President kicked off Diwali celebrations with a bang by securing an “Adj break“at the prestigious IIT Kanpur PD!He went on to panel in the Open Semi Finals, with a team cap of 76, the event was held in online mode from October 26th to 28th.Under his stellar leadership, we’ve achieved a milestone that’s lighting up our entire society and college! This break on such a grand stage is nothing short of a Diwali spark for future victories!Congratulations to our President on this achievement, and here’s to many more!Let this moment shine like a Diwali diya guiding us toward greater heights!",
   },
   {
-    img: "/images/award3.jpg",
-    title: "Top-5 – Ideathon",
-    desc: "Reached the finals among 100+ ideas pitched. Our idea focused on solving rural healthcare access using mobile-first teleconsultation.",
+    img: AcvAnuj,
+    title: "SMVIT DEBSOC proudly congratulates Anuj Kumar Dixit on an outstanding achievement at LA Vida 2024, hosted by the Rivers State University Debate Society, Port Harcourt, Nigeria!",
+    desc: "From First Steps to Big Breaks SMVIT DEBSOC proudly congratulates Anuj Kumar Dixit on an outstanding achievement at LA Vida 2024, hosted by the Rivers State University Debate Society, Port Harcourt, Nigeria! Out of 73 teams, Anuj made an impressive breakthrough, advancing all the way to the Novice Quarterfinals—an exceptional feat for someone just beginning their debating journey.This is just the beginning! Keep up the great work, Anuj—the sky’s thelimit!",
   },
   {
-    img: "/images/award4.jpg",
-    title: "Selected – Smart India Hackathon",
-    desc: "Selected to represent our college at the national Smart India Hackathon. Built a pollution tracking dashboard for city administrators.",
+    img: AcvOwais,
+    title: "A huge shoutout to Rohan Singh and Mohammed Owais, for their incredible performance at RCL PD'24, held at Ramaiah College of Law.",
+    desc: "A huge shoutout to Rohan Singh and Mohammed Owais, for their incredible performance at RCL PD'24, held at Ramaiah College of Law.Competing in the Novice category, they battled it out among 57 teams, securing 5th place and just missing the break by a whisker.Their dedication and passion have made us all proud. The next break is yours for the taking!Ready to conquer bigger stages and bring home more wins.",
   },
   {
-    img: "/images/award5.jpg",
-    title: "Appreciation – Volunteering",
-    desc: "Recognized for contributing over 100 hours in organizing technical and non-technical events, mentoring juniors, and supporting social outreach.",
+    img: AcvAnanya,
+    title: "Huge Congratulations to Aditya, Ananya, and Prachi for breaking as adjudicators in the OCTO FINALS! ",
+    desc: "Our dynamic Debate Society absolutely soared at the Agonia 3.O- The Reckoning'24 an online British Parliamentary tournament held a few weeks back!With 128 teams competing fiercely, we made it to the OCTO FINALS!Huge Congratulations to Aditya, Ananya, and Prachi for breaking as adjudicators in the OCTO FINALS! Special Shoutout to our First-Year Stars:Ananya and Prachi who rocked the tournament. Their exceptional performance in their very first tournament was commendable.We are so proud of each of them!Here's to many more debates, victories, and shining moments ",
   },
 ];
 
