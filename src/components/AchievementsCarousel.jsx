@@ -18,7 +18,13 @@ const AchievementCarousel = () => {
 
   return (
     <div className="relative w-full h-screen flex items-center justify-center bg-black overflow-hidden px-4">
+      {/* <h1 className="text-4xl font-extrabold text-orange-500 mb-6">ACHIEVEMENTS</h1> */}
       <div className="relative w-full max-w-7xl h-[420px] flex items-center justify-center">
+        
+        <h1 className="absolute top-0 left-60 -translate-x-1/2 -translate-y-7 text-4xl font-extrabold text-orange-500 z-50 ">
+          ACHIEVEMENTS
+        </h1>
+
         {achievements.map((item, index) => {
           const offset = (index - activeIndex + achievements.length) % achievements.length;
           const isActive = index === activeIndex;
@@ -56,14 +62,14 @@ const AchievementCarousel = () => {
 
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-2 sm:left-6 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 backdrop-blur p-3 rounded-full z-50"
+          className="absolute top-1/2 left-2 sm:left-6 -translate-y-1/2 text-orange-600 bg-white/10 hover:bg-white/20 backdrop-blur p-3 rounded-full z-50"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
 
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-2 sm:right-6 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 backdrop-blur p-3 rounded-full z-50"
+          className="absolute top-1/2 right-2 sm:right-6 -translate-y-1/2 text-orange-600 bg-white/10 hover:bg-white/20 backdrop-blur p-3 rounded-full z-50"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
