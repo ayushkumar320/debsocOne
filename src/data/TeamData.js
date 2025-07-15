@@ -26,6 +26,8 @@ export const teamMembers = [
     name: "Kanishk Chaudhary",
     position: "President",
     avatar: KanishkChaudhary,
+    description: "Aditya leads with calm and clarity, ensuring events are well coordinated and everyone stays inspired.",
+    ig: "www.instagram.com"
   },
   {
     name: "Aditya Kumar Singh",
@@ -58,7 +60,7 @@ export const teamMembers = [
     avatar: VittalaChaithanyaNM,
   },
   {
-     name: "Mohammed Owais",
+    name: "Mohammed Owais",
     position: "Equity Head",
     avatar: MohammedOwais,
   },
