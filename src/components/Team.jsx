@@ -5,7 +5,7 @@ function TeamGrid() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex flex-col items-center py-12">
       <h2 className="text-center text-orange-600 text-2xl md:text-3xl font-semibold mb-4">
-        TEAM MEMBERS
+        Meet Our Team
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8 w-full px-8">
         {teamMembers.map((member, idx) => (
