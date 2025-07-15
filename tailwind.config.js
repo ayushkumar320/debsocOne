@@ -6,34 +6,28 @@ export default {
   ],
   theme: {
     extend: {
-      animation: {
-        "card-drop": "cardDrop 0.5s ease-in-out forwards",
+      colors: {
+        black: "#000000",
+        orange: {
+          500: "#ff6a00",  // Bright orange
+          600: "#e65c00",
+        },
       },
       keyframes: {
-        cardDrop: {
-          "0%": {
-            opacity: 0,
-            transform: "translateY(100px) scale(0.95)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translateY(0) scale(1)",
-          },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
-      colors: {
-        orange: {
-          500: "#f97316", // Tailwind's default orange-500
-        },
-      },
-      boxShadow: {
-        glow: "0 0 25px #f97316",
-      },
-      fontSize: {
-        "2xl": "1.5rem",
-        "3xl": "1.875rem",
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+        'marquee-reverse': 'marquee-reverse 40s linear infinite',
       },
     },
   },
   plugins: [],
-};
+}
