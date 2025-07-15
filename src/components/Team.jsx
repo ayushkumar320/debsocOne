@@ -54,7 +54,7 @@ function TeamGrid() {
           />
 
           {/* Popup */}
-          <div className="relative w-11/12 sm:w-2/3 lg:w-1/3 max-h-[90vh] overflow-y-auto bg-gradient-to-b from-gray-900 to-black border border-orange-600 rounded-3xl p-10 shadow-[0_0_40px_#f97316] transition-all duration-500 ease-in-out transform scale-95 animate-card-drop cursor-pointer">
+          <div className="relative w-11/12 sm:w-2/3 lg:w-1/3 max-h-[90vh] overflow-y-auto bg-gradient-to-b from-gray-900 to-black border border-orange-600 rounded-3xl p-10 shadow-[0_0_40px_#f97316] transition-all duration-500 ease-in-out transform scale-95 animate-card-drop cursor-pointer animate-cardDrop">
             <button
               onClick={close}
               className="absolute top-4 right-4 text-orange-500 hover:text-orange-400"
