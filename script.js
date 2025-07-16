@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const quoteText = document.querySelector('.quote-text');
 
+
 async function fetchQuote() {
   const options = {
     method: 'GET',
