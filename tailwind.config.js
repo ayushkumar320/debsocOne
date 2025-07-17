@@ -9,7 +9,7 @@ export default {
       colors: {
         black: "#000000",
         orange: {
-          500: "#ff6a00",  // Bright orange
+          500: "#ff6a00",
           600: "#e65c00",
         },
       },
@@ -26,11 +26,16 @@ export default {
           "0%": { transform: "translateX(-50%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         marquee: "marquee 40s linear infinite",
         "marquee-reverse": "marquee-reverse 40s linear infinite",
-        cardDrop: "cardDrop 0.5s ease-in-out forwards", // ✅ ADD THIS LINE
+        cardDrop: "cardDrop 0.5s ease-in-out forwards",
+        fadeUp: "fadeUp 1s ease-out forwards",
       },
     },
   },
