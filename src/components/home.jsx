@@ -18,7 +18,7 @@ function Home() {
         </h1>
 
         <p className="text-lg md:text-2xl text-white font-mono mt-4 flex">
-          <span className="overflow-hidden whitespace-nowrap border-r-2 border-white text-4xl font-bold animate-typewriter-slogan">
+          <span className="overflow-hidden whitespace-nowrap border-r-2 border-white text-2xl font-bold animate-typewriter-slogan">
             Think | Speak | Listen
           </span>
           <span className="animate-cursor ml-1"> </span>
