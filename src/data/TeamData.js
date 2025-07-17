@@ -21,6 +21,7 @@ import AnanyaSingh from "./media/AnanyaSingh.jpg";
 import StutiPadhi from "./media/StutiPadhi.jpg";
 import SeelamVenkataChaitra from "./media/SeelamVenkataChaitra.jpg";
 import KripaChhajer from "./media/KripaChhajer.jpg";
+import PranathiNP from "./media/PranathiNP.jpg";
 
 export const teamMembers = [
   {
@@ -160,6 +161,12 @@ export const teamMembers = [
     name: "Kripa Chhajer",
     position: "Member",
     avatar: KripaChhajer,
+    description:"Keep Learning!!!!!",
+  },
+  {
+    name: "Pranathi N P",
+    position: "Member",
+    avatar: PranathiNP,
     description:"Keep Learning!!!!!",
   },
 ];
