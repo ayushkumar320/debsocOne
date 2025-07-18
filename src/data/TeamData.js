@@ -22,7 +22,8 @@ import StutiPadhi from "./media/StutiPadhi.jpg";
 import SeelamVenkataChaitra from "./media/SeelamVenkataChaitra.jpg";
 import KripaChhajer from "./media/KripaChhajer.jpg";
 import PranathiNP from "./media/PranathiNP.jpg";
-
+import MohammedRayyanKhaleel from "./media/MohammedRayyanKhaleel.jpg";
+import Nainika from "./media/Nainika.jpg";
 export const teamMembers = [
   {
     name: "Kanishk Chaudhary",
@@ -72,6 +73,12 @@ export const teamMembers = [
     position: "Equity Head",
     avatar: MohammedOwais,
     description: "'The new analysis that you bring in a debate is exceptional' - Sukesh Bhaiya and yes I think we all agree with it. Probably one of the best debaters in the club. He has a unique way of looking at things and his ability to dissect complex topics and present them clearly is commendable. This skill also lead him to being the 5th best team in RCL PD 24.Not only in debating, but he is always ready to help soc whenever needed. I do recall swinging with him, whether its Axiom or PD with the same utmost enthusiasm. This entire persona of his is what an ideal equity head should be like. He is always ready to help, always ready to listen, and break down complex issues into easy solutions. Keep up the great work, Owais!",
+  },
+  {
+    name: "Nainika",
+    position: "Equity Executive",
+    avatar: Nainika,
+    description: "Despite being in the junior batch, she still has the potential to lead people and keep them motivated. Her energy and enthusiasm are infectious, and she has a unique ability to bring people together and create a positive environment. The same goes for her debating skills. She has a natural talent for speaking and presenting her ideas clearly and confidently. Her ability to think on her feet and respond to arguments is impressive, and she has a bright future ahead of her in debating.",
   },
    {
     name: "Piyush Ratn",
@@ -168,5 +175,10 @@ export const teamMembers = [
     position: "Member",
     avatar: PranathiNP,
     description:"Keep Learning!!!!!",
-  },
+  },{
+    name: "Mohammed Rayyan Khaleel",
+    position: "Member",
+    avatar: MohammedRayyanKhaleel,
+    description:"Keep Learning!!!!!",
+  }
 ];
