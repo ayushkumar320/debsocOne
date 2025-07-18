@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 import Footer from "./footer";
 import Navbar from "./navbar";
 import Review from "./Review";
@@ -6,7 +6,7 @@ import Home from "./home";
 import TeamGrid from "./Team";
 import Quote from "./Quote";
 import AchievementsCarousel from "./AchievementsCarousel";
-import {ReactLenis, useLenis} from "@studio-freight/react-lenis";
+import {ReactLenis} from "@studio-freight/react-lenis";
 
 function App() {
   return (
@@ -26,14 +26,23 @@ function App() {
     >
       <div>
         <Navbar />
-        <Home />
-        <TeamGrid />
+        <div id="home">
+          <Home />
+        </div>
+        <div id="team">
+          <TeamGrid />
+        </div>
         <Quote />
-        <AchievementsCarousel />
-        <Review />
+        <div id="achievements">
+          <AchievementsCarousel />
+        </div>
+        <div id="alumini">
+          <Review />
+        </div>
         <Footer />
       </div>
     </ReactLenis>
   );
 }
+
 export default App;
