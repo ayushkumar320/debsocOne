@@ -1,23 +1,24 @@
+import DPL1 from "../../media/DPL1.jpg";
+import DPL2 from "../../media/DPL2.jpg";
+import DPL3 from "../../media/DPL3.jpg";
+import DPL4 from "../../media/DPL4.jpg";
+import DPL5 from "../../media/DPL5.jpg";
+import DPL6 from "../../media/DPL6.jpg";
+import DPL7 from "../../media/DPL7.jpg";
+import DPL8 from "../../media/DPL8.jpg";
+import DPL9 from "../../media/DPL9.jpg";
+import DPL10 from "../../media/DPL10.jpg";
+import DPL11 from "../../media/DPL11.jpg";
+import DPL12 from "../../media/DPL12.jpg";
+import DPL13 from "../../media/DPL13.jpg";
 import M1 from "../../media/M1.jpg";
 import M2 from "../../media/M2.jpg";
 import M3 from "../../media/M3.jpg";
 import M4 from "../../media/M4.jpg";
 import M5 from "../../media/M5.jpg";
-import PD1 from "../../media/PD1.jpg";
-import PD2 from "../../media/PD2.jpg";
-import PD3 from "../../media/PD3.jpg";
-import PD4 from "../../media/PD4.jpg";
-import PD5 from "../../media/PD5.jpg";
-import PD6 from "../../media/PD6.jpg";
-import PD7 from "../../media/PD7.jpg";
-import S1 from "../../media/S1.jpg";
-import S2 from "../../media/S2.jpg";
-import S3 from "../../media/S3.jpg";
-import S4 from "../../media/S4.jpg";
-import S5 from "../../media/S5.jpg";
-
+import M6 from "../../media/M6.jpg";
 export const galleryImages = [
-  M1, M2, M3,  S4, M4, M5,
-  S1, S2, S3, S5,
-  PD1, PD2, PD3, PD4, PD5, PD6, PD7,
+  DPL1, DPL2, DPL3, DPL4, DPL5, DPL6,
+  DPL7, DPL8,DPL13, DPL9, DPL10, DPL11, DPL12,
+   M2, M3, M4, M7, M6, M1
 ];

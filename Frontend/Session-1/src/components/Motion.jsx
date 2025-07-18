@@ -41,7 +41,7 @@ function Motion() {
     )}
 
     <p className="text-center text-gray-400 text-sm mt-8">
-      Refresh the page to see new random exercises!
+      Refresh the page to see new random Motions!
     </p>
   </div>
 </div>
