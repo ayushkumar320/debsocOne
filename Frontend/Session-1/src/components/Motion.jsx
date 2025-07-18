@@ -13,29 +13,41 @@ function Motion() {
         setMotions(getRandomMotions());
     }, []); // Empty dependency array means this runs once on mount
 
-    return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center p-4 font-inter">
-            <div className="bg-white bg-opacity-90 rounded-xl shadow-2xl p-6 md:p-8 lg:p-10 max-w-4xl w-full">
-                <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
-                    Random Motion Exercises
-                </h1>
-                {motions.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {motions.map((m, i) => (
-                            <div key={i} className="bg-gradient-to-br from-blue-100 to-green-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                                <h2 className="text-2xl font-bold text-gray-700 mb-2">{m.type}</h2>
-                                <h3 className="text-xl font-semibold text-indigo-600 mb-3">{m.motion}</h3>
-                                <p className="text-gray-600 text-base leading-relaxed">{m.InfoSlide}</p>
-                            </div>
-                        ))}
-                    </div>
-                ) : (
-                    <p className="text-center text-gray-600 text-lg">Loading random motions...</p>
-                )}
-                <p className="text-center text-gray-500 text-sm mt-8">Refresh the page to see new random exercises!</p>
-            </div>
-        </div>
-    );
+    return <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center p-6 font-inter">
+  <div className="bg-white bg-opacity-5 rounded-xl shadow-2xl p-6 md:p-10 lg:p-12 w-full max-w-screen-xl">
+    <h1 className="text-4xl font-extrabold text-center text-white mb-10">
+      Random Motion Exercises
+    </h1>
+
+    {motions.length > 0 ? (
+      <div className="flex flex-col md:flex-row items-center justify-center">
+        {motions.map((m, i) => (
+          <div
+            key={i}
+            className="bg-gradient-to-br from-gray-800 to-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 w-full md:w-[90%] max-w-5xl text-white"
+          >
+            <h2 className="text-2xl font-bold mb-2">{m.type}</h2>
+            <h3 className="text-xl font-semibold text-indigo-400 mb-4">
+              {m.motion}
+            </h3>
+            <p className="text-gray-300 text-base leading-relaxed">
+              {m.InfoSlide}
+            </p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p className="text-center text-gray-300 text-lg">Loading random motions...</p>
+    )}
+
+    <p className="text-center text-gray-400 text-sm mt-8">
+      Refresh the page to see new random exercises!
+    </p>
+  </div>
+</div>
+
+
+
 }
 
 export default Motion;
