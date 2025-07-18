@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "session-1",
+=======
+  "name": "gallery",
+>>>>>>> 27746fea2ce12bb3d21566277ec6af8fa8b680c8
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,16 +19,25 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
+<<<<<<< HEAD
     "@tailwindcss/postcss": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.21",
+=======
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+>>>>>>> 27746fea2ce12bb3d21566277ec6af8fa8b680c8
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+<<<<<<< HEAD
     "tailwindcss": "^3.4.17",
+=======
+>>>>>>> 27746fea2ce12bb3d21566277ec6af8fa8b680c8
     "vite": "^7.0.4"
   }
 }
