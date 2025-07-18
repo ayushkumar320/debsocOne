@@ -54,7 +54,7 @@ function Footer() {
       <section className="bg-gray-950 text-gray-400 px-6 py-6">
         <div className="max-w-4xl mx-auto text-center">
           <a
-            href="/Frontend/founder/index.html"
+            href="/founder/index.html"
             target="_blank"
             rel="noopener noreferrer"
             className="text-orange-400 hover:text-orange-500 underline text-lg md:text-xl font-semibold"

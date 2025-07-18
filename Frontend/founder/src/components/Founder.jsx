@@ -12,7 +12,7 @@ const founders = [
     name: "Md. Mobasshir Shakil Khan",
     role: "Website Founder and Lead Developer",
     bio: "Full-stack developer with a passion for building scalable web applications and a keen eye for design.",
-    img: "../src/assets/Mobi.jpg",
+    img: "../../public/Mobi.jpg",
     socials: {
       github: "https://github.com/mobi2400",
       linkedin: "https://www.linkedin.com/in/md-mobasshir-shakil-khan-8ba835326/",
@@ -24,7 +24,7 @@ const founders = [
     name: "Ayush Kumar",
     role: "Assistant Developer and Designer",
     bio: "Aspiring Full-Stack Developer with a passion for scalable web apps and clean design.",
-    img: "../src/assets/Ayush.jpg", 
+    img: "../../public/Ayush.jpg", 
     socials: {
       github: "https://github.com/ayushkumar320",
       linkedin: "https://www.linkedin.com/in/ayushnotkumar/",
