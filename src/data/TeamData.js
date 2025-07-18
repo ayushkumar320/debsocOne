@@ -39,7 +39,7 @@ export const teamMembers = [
     description: "Adi is one of the foundational people of the 25-26 batch of Debsoc. His work ethic, consistency and ability to manage things well under pressure is unparalleled. As one of the finest adjudicators in the soc, his feedback both within debates and beyond, has been among the most valuable anvone could receive.He's not just someone who gets things done; he leads by example and pushes others to do better. In this new cabinet, Adi will continue to be the rock he's always been someone who holds things together and raises the bar, just like he always has.",
   },
   {
-    name: "Dhruve Kumar",
+    name: "Dhruv Kumar",
     position: "Operational Head",
     avatar: DhruveKumar,
     description: "From being the operational coordinator to being the operational head now, dhruv has always proved himself.We've pulled off so many events together, he's practically become my little baby brother. And a very smart, very competitive baby brother at that! And don't let that sweet, innocent face fool you for a second. Underneath that lies a brain so awe- inspiring, it's terrifying sometimes. He is basically a fountain of information.Trying to win an argument against him is like bringing a spoon to a sword fight! But here's the best part, apart from his terrifying intellect, he's also the best listener. He is someone who you can go speak to about anything (professional or personal) and he is always ready to listen. Honestly, we couldn't have asked for anyone better for this role , and I hope only the best finds you!!",
