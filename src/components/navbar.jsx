@@ -88,7 +88,7 @@ function Navbar() {
           onMouseLeave={() => setIsDropdownOpen(false)}
         >
           <button className="hover:text-orange-400 transition">
-            Get In Touch
+            Login
           </button>
           <div
             className={`absolute top-10 right-0 w-40 bg-gray-800 border border-gray-700 rounded shadow-lg z-20 transition-all duration-300 origin-top ${
@@ -98,23 +98,20 @@ function Navbar() {
             }`}
           >
             <a
-              href="#login-page-link"
+              href="/FormPage/index.html"
               className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500"
+              target="_blank" rel="noopener noreferrer"
             >
               Admin
             </a>
             <a
-              href="#member-page-link"
+              href="/FormPage/index.html"
               className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500"
+              target="_blank" rel="noopener noreferrer"
             >
               Member
             </a>
-            <a
-              href="#apply-now-form-link"
-              className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500"
-            >
-              Apply Now
-            </a>
+            
           </div>
         </li>
       </ul>
