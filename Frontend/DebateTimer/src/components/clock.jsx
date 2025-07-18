@@ -1,14 +1,10 @@
- import React from "react";
- import Stopwatch from "./Stopwatch";
+import React from "react";
 
-function Clock() {
+function Clock(props){
   return (
-    <div className="clock">
-        {/* <span className="time">00:00</span> */}
-        <Stopwatch />
-        
+    <div className="text-2xl font-bold text-center mt-4">
+      <span>{props.time}</span>
     </div>
   );
- }
-
- export default Clock;
+}
+export default Clock;
