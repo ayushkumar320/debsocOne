@@ -1,5 +1,3 @@
-import { Info } from "lucide-react";
-
 export const motion =[
     {
         type:"Feminism Gender Social Policy",
@@ -71,7 +69,5 @@ export const motion =[
         motion:"This house, as Chonky, would take the job",
         InfoSlide:"In 1942, Dr. Chonky is an unemployed theoretical physicist and is offered a job developing a new category of atomic weapons (seemingly not prohibited by any treaty). Chonky has always been strongly opposed to weapons of mass destruction, but jobs are scarce and Chonky has a family to provide for. Chonky's spouse makes a very modest salary as a preschool teacher, and has no qualms about Chonky working on these new weapons. If Chonky does not take the job, they are told that Dr. Tairanosaur, someone without any reservations about the weapons research, will take the job and will likely move the development ahead more quickly."
     },
-    {
-        ty
-    }
+
 ]
