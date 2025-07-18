@@ -17,7 +17,7 @@ import S4 from "../../media/S4.jpg";
 import S5 from "../../media/S5.jpg";
 
 export const galleryImages = [
-  M1, M2, M3, M4, M5,
+  M1, M2, M3,  S4, M4, M5,
+  S1, S2, S3, S5,
   PD1, PD2, PD3, PD4, PD5, PD6, PD7,
-  S1, S2, S3, S4, S5
 ];

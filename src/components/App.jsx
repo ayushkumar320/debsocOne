@@ -7,6 +7,7 @@ import TeamGrid from "./Team";
 import Quote from "./Quote";
 import AchievementsCarousel from "./AchievementsCarousel";
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
+import Gallery from "./Gallery";
 function App() {
     return (
             <ReactLenis
@@ -26,6 +27,7 @@ function App() {
         <div>
            <Navbar />
             <Home />
+            <Gallery />
             <TeamGrid />
             <Quote/>
             <AchievementsCarousel />
