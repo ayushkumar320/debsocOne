@@ -63,12 +63,12 @@ function Navbar() {
           </button>
         </li>
         <li>
-          <a href="#Debate Timer" className="hover:text-orange-400 transition">
+          <a href="/DebateTimer/index.html" className="hover:text-orange-400 transition" target="_blank"  rel="noopener noreferrer">
             Debate Timer
           </a>
         </li>
         <li>
-          <a href="#session" className="hover:text-orange-400 transition">
+          <a href="/Session-1/index.html" className="hover:text-orange-400 transition" target="_blank"  rel="noopener noreferrer">
             Session
           </a>
         </li>
@@ -78,7 +78,7 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#gallery" className="hover:text-orange-400 transition">
+          <a href="/Gallery/index.html" className="hover:text-orange-400 transition" target="_blank" rel="noopener noreferrer">
             Gallery
           </a>
         </li>

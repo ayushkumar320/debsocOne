@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="relative h-[70vh] md:h-screen w-full overflow-hidden">
       <img
-        src="./media/M5.jpg"
+        src="/media/M5.jpg"
         alt="group photo"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />

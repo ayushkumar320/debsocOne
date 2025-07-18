@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import quoteImage from "../data/media/quote-image.jpg"; 
+import quoteImage from "../assets/quote-image.jpg";  // Move image to src/assets
 
 function Quote() {
-  const [quote, setQuote] = useState("");
+  const [quote, setQuote] = useState("Loading...");
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     async function fetchQuote() {
@@ -12,19 +13,25 @@ function Quote() {
         url: "https://famous-quotes4.p.rapidapi.com/random",
         params: { category: "all", count: "1" },
         headers: {
-          "x-rapidapi-key": "c34d826a09mshe0f622c103da4cep1a9cf1jsn2d01806e2d8d",
+          "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY,  // from env
           "x-rapidapi-host": "famous-quotes4.p.rapidapi.com",
         },
       };
+
       try {
         const response = await axios.request(options);
         if (response.data && response.data.length > 0) {
           setQuote(response.data[0].text);
+        } else {
+          setQuote("No quotes available.");
         }
-      } catch (error) {
+      } catch (err) {
+        console.error(err);
+        setError(true);
         setQuote("Failed to fetch quote.");
       }
     }
+
     fetchQuote();
   }, []);
 
@@ -35,8 +42,13 @@ function Quote() {
         <div className="flex flex-col justify-center">
           <h2 className="text-orange-500 text-2xl font-bold mb-6">QUOTE OF THE DAY</h2>
           <blockquote className="text-white text-xl italic leading-relaxed border-l-4 border-orange-500 pl-4">
-            {quote || "Loading..."}
+            {quote}
           </blockquote>
+          {error && (
+            <p className="text-red-400 mt-4 text-sm">
+              Check your API key or network connection.
+            </p>
+          )}
         </div>
 
         <div className="flex items-center justify-center">
