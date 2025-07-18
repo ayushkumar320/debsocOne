@@ -25,7 +25,7 @@ function Review() {
   return (
     <div className="bg-black overflow-x-hidden">
       <section className="relative isolate min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex flex-col justify-center space-y-12 py-10">
-        <h1 className="text-2xl sm:text-3xl text-orange-600 text-center font-extrabold">REVIEWS</h1>
+        <h1 className="text-2xl sm:text-3xl text-orange-600 text-center font-extrabold">ALUMINI</h1>
 
         <div className="relative">
           <GradientMask />
