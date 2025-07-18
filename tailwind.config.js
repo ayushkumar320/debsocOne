@@ -18,6 +18,10 @@ export default {
           "0%": { opacity: 0, transform: "translateY(100px) scale(0.95)" },
           "100%": { opacity: 1, transform: "translateY(0) scale(1)" },
         },
+        overlayFade: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
         marquee: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
@@ -51,6 +55,7 @@ export default {
         marquee: "marquee 40s linear infinite",
         "marquee-reverse": "marquee-reverse 40s linear infinite",
         cardDrop: "cardDrop 0.5s ease-in-out forwards",
+        overlayFade: "overlayFade 0.4s ease-out forwards",
         fadeUp: "fadeUp 1s ease-out forwards",
         typewriter: "typing 6s steps(12) infinite",
         "typewriter-slogan": "typingSlogan 6s steps(22) infinite",

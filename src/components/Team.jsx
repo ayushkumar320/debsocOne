@@ -1,18 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { X, Instagram } from "lucide-react";
 import { teamMembers } from "../data/TeamData";
+import { useLenis } from "@studio-freight/react-lenis";
 
 function TeamGrid() {
   const [activeMember, setActiveMember] = useState(null);
   const [showAllMembers, setShowAllMembers] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+  const modalRef = useRef(null);
+  const lenis = useLenis();
 
-  const close = () => setActiveMember(null);
+  const close = () => {
+    document.body.style.overflow = "auto";
+    document.body.style.touchAction = "auto";
+    if (lenis) lenis.start();
+    setActiveMember(null);
+  };
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -28,11 +34,35 @@ function TeamGrid() {
     return () => window.removeEventListener("keydown", esc);
   }, []);
 
+  useEffect(() => {
+    if (activeMember) {
+      document.body.style.overflow = "hidden";
+      document.body.style.touchAction = "none";
+      if (lenis) lenis.stop();
+
+      const preventLenisWheel = (e) => e.stopPropagation();
+      const modalNode = modalRef.current;
+      if (modalNode) {
+        modalNode.addEventListener("wheel", preventLenisWheel, { passive: false });
+        modalNode.addEventListener("touchmove", preventLenisWheel, { passive: false });
+      }
+
+      return () => {
+        if (modalNode) {
+          modalNode.removeEventListener("wheel", preventLenisWheel);
+          modalNode.removeEventListener("touchmove", preventLenisWheel);
+        }
+      };
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.style.touchAction = "auto";
+      if (lenis) lenis.start();
+    }
+  }, [activeMember, lenis]);
+
   const coreMembers = teamMembers.filter((m) => m.position !== "Member");
   const generalMembers = teamMembers.filter((m) => m.position === "Member");
-  const visibleMembers = showAllMembers
-    ? generalMembers
-    : generalMembers.slice(0, 2);
+  const visibleMembers = showAllMembers ? generalMembers : generalMembers.slice(0, 2);
   const combinedTeam = [...coreMembers, ...visibleMembers];
 
   return (
@@ -77,10 +107,15 @@ function TeamGrid() {
       {activeMember && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           <div
-            className="absolute inset-0 bg-black/70 backdrop-blur-md"
+            className="absolute inset-0 bg-black/70 backdrop-blur-md animate-overlayFade"
             onClick={close}
           />
-          <div className="relative w-11/12 sm:w-2/3 lg:w-1/3 max-h-[90vh] overflow-y-auto bg-gradient-to-b from-gray-900 to-black border border-orange-600 rounded-3xl p-10 shadow-[0_0_40px_#f97316] transition-all duration-500 ease-in-out transform scale-95 animate-card-drop cursor-pointer animate-cardDrop scrollbar-hide">
+          <div
+            ref={modalRef}
+            className="relative w-11/12 sm:w-2/3 lg:w-1/3 max-h-[85vh] overflow-y-auto overscroll-contain scrollbar-hide bg-gradient-to-b from-gray-900 to-black border border-orange-600 rounded-3xl p-8 shadow-[0_0_40px_#f97316] animate-cardDrop"
+          >
+            <div className="pointer-events-none absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-black to-transparent" />
+            <div className="pointer-events-none absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-black to-transparent" />
             <button
               onClick={close}
               className="absolute top-4 right-4 text-orange-500 hover:text-orange-400"
