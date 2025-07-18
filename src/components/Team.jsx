@@ -1,31 +1,52 @@
 import React, { useState, useEffect } from "react";
-import { X } from "lucide-react";
+import { X, Instagram } from "lucide-react";
 import { teamMembers } from "../data/TeamData";
 
 function TeamGrid() {
   const [activeMember, setActiveMember] = useState(null);
+  const [showAllMembers, setShowAllMembers] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const close = () => setActiveMember(null);
 
   useEffect(() => {
-    const esc = e => e.key === "Escape" && close();
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isDesktop) setShowAllMembers(true);
+  }, [isDesktop]);
+
+  useEffect(() => {
+    const esc = (e) => e.key === "Escape" && close();
     window.addEventListener("keydown", esc);
     return () => window.removeEventListener("keydown", esc);
   }, []);
 
+  const coreMembers = teamMembers.filter((m) => m.position !== "Member");
+  const generalMembers = teamMembers.filter((m) => m.position === "Member");
+  const visibleMembers = showAllMembers
+    ? generalMembers
+    : generalMembers.slice(0, 2);
+  const combinedTeam = [...coreMembers, ...visibleMembers];
+
   return (
-    <section className="relative min-h-screen flex flex-col items-center bg-gradient-to-br from-black via-gray-900 to-black py-12 ">
+    <section className="relative min-h-screen flex flex-col items-center bg-gradient-to-br from-black via-gray-900 to-black py-12">
       <h2 className="text-orange-600 text-2xl md:text-3xl font-semibold mb-4">
         TEAM MEMBERS
       </h2>
 
-      {/* grid */}
       <div
         className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8 w-full px-8 ${
           activeMember ? "pointer-events-none blur-sm" : ""
         }`}
       >
-        {teamMembers.map((m, i) => (
+        {combinedTeam.map((m, i) => (
           <div
             key={i}
             onClick={() => setActiveMember(m)}
@@ -44,16 +65,21 @@ function TeamGrid() {
         ))}
       </div>
 
-           {/* Popup Card */}
+      {!showAllMembers && !isDesktop && (
+        <button
+          className="mt-6 px-6 py-2 bg-orange-500 text-white rounded-full font-semibold shadow-lg hover:bg-orange-700 transition md:hidden"
+          onClick={() => setShowAllMembers(true)}
+        >
+          View All Members
+        </button>
+      )}
+
       {activeMember && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/70 backdrop-blur-md"
             onClick={close}
           />
-
-          {/* Popup */}
           <div className="relative w-11/12 sm:w-2/3 lg:w-1/3 max-h-[90vh] overflow-y-auto bg-gradient-to-b from-gray-900 to-black border border-orange-600 rounded-3xl p-10 shadow-[0_0_40px_#f97316] transition-all duration-500 ease-in-out transform scale-95 animate-card-drop cursor-pointer animate-cardDrop scrollbar-hide">
             <button
               onClick={close}
