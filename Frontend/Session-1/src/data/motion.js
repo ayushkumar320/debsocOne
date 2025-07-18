@@ -57,7 +57,7 @@ export const motion =[
      {
         type:"International Relations Military",
         motion:" This house believes that countries with substantial defense capabilities should actively intercept foreign military communications of post conflict states",
-        InfoSlide:""
+        InfoSlide:"null"
     },
      {
         type:"Asia International Relations Military",
@@ -69,5 +69,50 @@ export const motion =[
         motion:"This house, as Chonky, would take the job",
         InfoSlide:"In 1942, Dr. Chonky is an unemployed theoretical physicist and is offered a job developing a new category of atomic weapons (seemingly not prohibited by any treaty). Chonky has always been strongly opposed to weapons of mass destruction, but jobs are scarce and Chonky has a family to provide for. Chonky's spouse makes a very modest salary as a preschool teacher, and has no qualms about Chonky working on these new weapons. If Chonky does not take the job, they are told that Dr. Tairanosaur, someone without any reservations about the weapons research, will take the job and will likely move the development ahead more quickly."
     },
+    {
+    motion: "The council is of the opinion that exclusive art spaces bring more harm than good.",
+    InfoSlide: "Exclusive art spaces refer to exhibitions or installations that limit access to certain groups, usually based on identity. The Ladies' Lounge at the Museum of Old and New Art (MONA) in Tasmania, Australia, is an example of an exclusive art space that recently prohibited cisgender men from entering the exhibit. The museum subsequently faced a discrimination lawsuit, which led to the closure of the lounge.",
+    types:  "Art Culture LGBTQ+"
+  },
+  {
+    motion: "This house believes that the queer movement in Jamaica should oppose rather than support the police",
+    InfoSlide: "Jamaica's anti-sodomy and public morality laws have long sanctioned violence and discrimination against queer people. In recent years, the queer movement in Jamaica and its advocacy groups (e.g., J-FLAG, TransWave) have grown more visible and influential. Although formal arrests are now rare and police sometimes provide limited protection for events like Pride, officers regularly intimidate and harass queer people.",
+    types: "LGBTQ+ Minority Communities Police"
+  },
+  {
+    motion: "This House opposes the focus on coming out in LGBTQ+ media and popular culture.",
+    InfoSlide: null,
+    types: "Culture LGBTQ+ Media"
+  },
+  {
+    motion: "As a reputable children's book author, this House would choose to queer code main characters in the story",
+    InfoSlide: "Queer coding is the act of using subtext to code a character in media as queer. The process of queer coding entails applying characteristics associated with queerness to a character, without ever confirming it.",
+    types: "Children LGBTQ+ Social Policy"
+  },
+  {
+    motion: "This house believes that the feminist movement should actively oppose the participation of gender and sexual minorities in hip-hop/rap",
+    InfoSlide: null,
+    types: "Culture Feminism LGBTQ+"
+  },
+  {
+    motion: "This house supports Western pop artists with significant queer fanbase actively rejecting to perform in countries with queer-oppressive social policies (e.g. Lizzo in Texas, Beyonce in UAE)",
+    InfoSlide: null,
+    types: "Culture International Relations LGBTQ+"
+  },
+  {
+    motion: "That we support the research into allowing parents to genetically ensure that they will have an LGBT baby.",
+    InfoSlide: null,
+    types: "Social Policy LGBTQ+ Children Science/Technology"
+  },
+  {
+    motion: "This house regrets mainstream media's popularization of Western drag culture",
+    InfoSlide: null,
+    types: "Culture LGBTQ+ Media"
+  },
+  {
+    motion: "This house supports Western pop artists with significant queer fanbase actively rejecting to perform in countries with queer-oppressive social policies (e.g. Lizzo in Texas, Beyonce in UAE)",
+    InfoSlide: null,
+    types: "Culture International Relations LGBTQ+"
+  }
 
 ]

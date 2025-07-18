@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "../data/motion.js";
 
-const getRandomMotions = (count = 2) => {
+const getRandomMotions = (count = 1) => {
     const shuffled = [...motion].sort(() => 0.5 - Math.random());
     const numberOfItemsToSelect = Math.floor(Math.random() * count) + 1;
     return shuffled.slice(0, Math.min(numberOfItemsToSelect, motion.length));
