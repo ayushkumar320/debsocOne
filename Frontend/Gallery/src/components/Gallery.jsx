@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { galleryImages } from "../data/galleryData";
+import React, {useEffect, useState} from "react";
+import {galleryImages} from "../../../../src/data/galleryData";
 
 function Gallery() {
   const [imageMeta, setImageMeta] = useState([]);
@@ -13,7 +13,7 @@ function Gallery() {
             img.src = src;
             img.onload = () => {
               const isLandscape = img.width >= img.height;
-              resolve({ src, isLandscape });
+              resolve({src, isLandscape});
             };
           })
       )
@@ -27,7 +27,7 @@ function Gallery() {
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-6xl mx-auto auto-rows-[200px]">
-        {imageMeta.map(({ src, isLandscape }, i) => {
+        {imageMeta.map(({src, isLandscape}, i) => {
           const colSpan = isLandscape ? "col-span-2" : "col-span-1";
           const rowSpan = isLandscape ? "row-span-1" : "row-span-2";
           const imageClass = isLandscape ? "object-cover" : "object-contain";
