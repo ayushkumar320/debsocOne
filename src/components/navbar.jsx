@@ -25,12 +25,14 @@ function Navbar() {
       </h1>
 
       <ul className="hidden md:flex space-x-6 items-center">
-        <li><a href="#home" className="hover:text-orange-400 transition">Home</a></li>
-        <li><a href="#Achievements" className="hover:text-orange-400 transition">Team</a></li>
-        <li><a href="#events" className="hover:text-orange-400 transition">Highlights</a></li>
-        <li><a href="#Review" className="hover:text-orange-400 transition">Review</a></li>
+        
+        <li><a href="#team" className="hover:text-orange-400 transition">Team</a></li>
+        <li><a href="#achievements" className="hover:text-orange-400 transition">Achievemts</a></li>
+        <li><a href="#alumini" className="hover:text-orange-400 transition">Alumini</a></li>
         <li><a href="#Debate Timer" className="hover:text-orange-400 transition">Debate Timer</a></li>
         <li><a href="#session" className="hover:text-orange-400 transition">Session</a></li>
+        <li><a href="#equity" className="hover:text-orange-400 transition">Equity</a></li>
+        <li><a href="#gallery" className="hover:text-orange-400 transition">Gallery</a></li>
         <li
           className="relative"
           onMouseEnter={() => setIsDropdownOpen(true)}
@@ -43,7 +45,6 @@ function Navbar() {
           >
             <a href="#login-page-link" className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500">Admin</a>
             <a href="#member-page-link" className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500">Member</a>
-            <a href="#equity-form-link" className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500">Equity</a>
             <a href="#apply-now-form-link" className="block px-4 py-2 hover:bg-gray-700 hover:text-orange-500">Apply Now</a>
           </div>
         </li>
