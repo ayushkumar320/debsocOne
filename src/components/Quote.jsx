@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import quoteImage from "../assets/quote-image.jpg";  // Move image to src/assets
+import quoteImage from "../assets/quote-image.jpg";
+
+const API_KEY = import.meta.env.VITE_RAPIDAPI_KEY;
 
 function Quote() {
   const [quote, setQuote] = useState("Loading...");
@@ -13,7 +15,7 @@ function Quote() {
         url: "https://famous-quotes4.p.rapidapi.com/random",
         params: { category: "all", count: "1" },
         headers: {
-          "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY,  // from env
+          "x-rapidapi-key": API_KEY,
           "x-rapidapi-host": "famous-quotes4.p.rapidapi.com",
         },
       };
