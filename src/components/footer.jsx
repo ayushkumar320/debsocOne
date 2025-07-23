@@ -15,7 +15,9 @@ function Footer() {
           <p className="text-sm text-center md:text-left">
             © {year} <span className="text-orange-400 font-semibold">SMVIT DEBSOC</span>. All rights reserved.
           </p>
-          <h5 className="text-sm uppercase tracking-wide text-center">Follow us on social media</h5>
+          <h5 className="text-sm uppercase tracking-wide text-center md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+            Follow us on social media
+          </h5>
           <div className="flex space-x-5 text-2xl">
             <a
               href="https://www.instagram.com/smvit_debsoc/"
