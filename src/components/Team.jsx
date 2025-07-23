@@ -114,11 +114,9 @@ function TeamGrid() {
             ref={modalRef}
             className="relative w-11/12 sm:w-2/3 lg:w-1/3 max-h-[85vh] overflow-y-auto overscroll-contain scrollbar-hide bg-gradient-to-b from-gray-900 to-black border border-orange-600 rounded-3xl p-8 shadow-[0_0_40px_#f97316] animate-cardDrop"
           >
-            <div className="pointer-events-none absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-black to-transparent" />
-            <div className="pointer-events-none absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-black to-transparent" />
             <button
               onClick={close}
-              className="absolute top-4 right-4 text-orange-500 hover:text-orange-400"
+              className="absolute top-4 right-4 text-orange-500 hover:text-orange-400 z-10"
               aria-label="Close"
             >
               <X size={24} />
