@@ -7,11 +7,11 @@ import MotionsArticle3 from "./Motion2";
 function App() {
   return (
    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black ">
-      <UniversityDebate />
+    <Motion />
+    <UniversityDebate />
     <MotionsArticle />
     <MotionArticle2 />
     <MotionsArticle3/>
-     <Motion />
    </div>
   );
 }
