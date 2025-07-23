@@ -15,7 +15,7 @@ function Motion() {
     }, []);
 
     return (
-        <div className="pt-6 pb-6 px-6 font-inter">
+        <div className="w-full pt-6 pb-6 px-6 font-inter relative z-10">
             <div className="bg-white bg-opacity-5 rounded-xl shadow-2xl p-6 md:p-10 lg:p-12 w-full max-w-screen-xl mx-auto">
                 <h1 className="text-4xl font-extrabold text-center text-white mb-10">
                     Random Motion Exercises
