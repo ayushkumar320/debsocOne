@@ -9,7 +9,7 @@ import {
 const founders = [
   {
     id: 1,
-    name: "Md. Mobasshir Shakil Khan",
+    name: "Md. Mobasshir Shakil Khan 2",
     role: "Website Founder and Lead Developer",
     bio: "Full-stack developer with a passion for building scalable web applications and a keen eye for design.",
     img: "../../public/Mobi.jpg",
