@@ -11,44 +11,50 @@ function Footer() {
   return (
     <>
       <footer className="bg-gray-900 text-gray-300 px-6 py-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-sm text-center md:text-left">
-            © {year} <span className="text-orange-400 font-semibold">SMVIT DEBSOC</span>. All rights reserved.
-          </p>
-          <h5 className="text-sm uppercase tracking-wide text-center md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
-            Follow us on social media
-          </h5>
-          <div className="flex space-x-5 text-2xl">
-            <a
-              href="https://www.instagram.com/smvit_debsoc/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-400 transition-colors duration-300"
-            >
-              <BiLogoInstagramAlt />
-            </a>
-            <a
-              href="https://www.facebook.com/people/SMVIT-DEBSOC/100085129608350/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-400 transition-colors duration-300"
-            >
-              <BsFacebook />
-            </a>
-            <a
-              href="https://www.youtube.com/@smvitdebsoc738"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-orange-400 transition-colors duration-300"
-            >
-              <TfiYoutube />
-            </a>
-            <a
-              href="mailto:smvitdebsoc12@gmail.com"
-              className="hover:text-orange-400 transition-colors duration-300"
-            >
-              <MdOutlineAlternateEmail />
-            </a>
+        <div className="max-w-7xl mx-auto relative">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <p className="text-sm text-center md:text-left">
+              © {year} <span className="text-orange-400 font-semibold">SMVIT DEBSOC</span>. All rights reserved.
+            </p>
+
+            {/* This is the new, unified heading */}
+            <h5 className="text-sm uppercase tracking-wide text-center md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
+              Follow us on social media
+            </h5>
+
+            <div className="flex space-x-5 text-2xl">
+              <a
+                href="https://www.instagram.com/smvit_debsoc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors duration-300"
+              >
+                <BiLogoInstagramAlt />
+              </a>
+              <a
+                href="https://www.facebook.com/people/SMVIT-DEBSOC/100085129608350/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors duration-300"
+              >
+                <BsFacebook />
+              </a>
+              <a
+                href="https://www.youtube.com/@smvitdebsoc738"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors duration-300"
+              >
+                <TfiYoutube />
+              </a>
+              <a
+                href="mailto:smvitdebsoc12@gmail.com"
+                className="hover:text-orange-400 transition-colors duration-300"
+              >
+                <MdOutlineAlternateEmail />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
