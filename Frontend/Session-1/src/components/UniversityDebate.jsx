@@ -1,8 +1,8 @@
 import React from "react";
 
 function UniversityDebate(){
-    return <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black font-serif p-4 sm:p-8 flex items-center justify-center">
-      <div className="max-w-6xl w-full bg-gray-900 shadow-xl rounded-lg overflow-hidden border-2 border-gray-700">
+    return <div className="bg-gradient-to-br from-black via-gray-900 to-black font-serif p-4 sm:p-8">
+      <div className="max-w-6xl w-full mx-auto bg-gray-900 shadow-xl rounded-lg overflow-hidden border-2 border-gray-700">
         <main className="p-4 sm:p-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-white">
           <section className="md:col-span-3 pb-4 border-b border-gray-700 mb-4">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-400 font-sans">
@@ -82,14 +82,12 @@ function UniversityDebate(){
             </div>
           </section>
 
-          {/* Section 4: Common Elements / Features */}
           <section className="md:col-span-3 pt-4 border-t border-gray-700 mt-4">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-400 font-sans">
               Common Elements & Strategic Features
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {/* POIs */}
               <div>
                 <h3 className="text-2xl font-semibold mb-3 text-white">Points of Information (POIs):</h3>
                 <ul className="list-disc list-inside ml-4 text-gray-200 leading-relaxed">

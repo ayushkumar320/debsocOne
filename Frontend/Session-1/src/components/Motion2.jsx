@@ -2,7 +2,7 @@ import React from "react";
 
 function MotionsArticle3() {
      return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black p-4 font-serif text-gray-100">
+    <div className="bg-gradient-to-br from-black via-gray-900 to-black p-4 font-serif text-gray-100">
       <main className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <section className="md:col-span-2 bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
           <h2 className="text-4xl font-bold mb-4 text-blue-400">Understanding More Debate Motion Types</h2>
@@ -165,7 +165,6 @@ function MotionsArticle3() {
       </main>
     </div>
   );
-
-
 }
+
 export default MotionsArticle3;

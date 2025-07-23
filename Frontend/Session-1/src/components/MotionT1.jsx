@@ -2,7 +2,7 @@ import React from "react";
 
 function MotionArticle2 (){
     return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black p-4 font-serif text-gray-100">
+    <div className="bg-gradient-to-br from-black via-gray-900 to-black p-4 font-serif text-gray-100">
       <main className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <section className="md:col-span-2 bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700">
           <h2 className="text-4xl font-bold mb-4 text-blue-400">Understanding Debate Motions</h2>
@@ -35,7 +35,6 @@ function MotionArticle2 (){
             </ul>
           </div>
 
-          {/* Removed mb-6 from this div */}
           <div className="">
             <h3 className="text-2xl font-semibold mb-3 border-b border-gray-600 pb-2">4. What is Fiat?</h3>
             <p className="mb-2 leading-relaxed">
@@ -119,6 +118,6 @@ function MotionArticle2 (){
       </main>
     </div>
   );
-
 }
+
 export default MotionArticle2
